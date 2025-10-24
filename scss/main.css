@@ -11978,4 +11978,36 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+#nav_list {
+  margin-top: 20px;
+  width: 80px;
+  background-color: blue;
+  border-radius: 0 30px 30px 0;
+  color: white;
+}
+
+#div_link {
+  width: 138px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#span_list {
+  font-weight: bold;
+  width: 40px;
+}
+
+#span_list:hover {
+  animation: rotate 1s linear reverse;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=main.css.map */

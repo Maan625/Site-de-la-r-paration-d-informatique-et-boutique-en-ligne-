@@ -1,3 +1,16 @@
+.header{
+ background-image: url(/images/8f2f424e-c686-433a-b328-473a7feafe86.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+//  margin: 0 auto;
+text-align: center;
+ padding-top: 10px;
+ padding-bottom: 40px;
+ 
+ 
+}
+
 #nav_list {
   // width: 138px;
   margin-top: 20px;
@@ -7,10 +20,11 @@
   color: white;
 }
 #div_link {
-  width: 138px;
+  width: 300px;
   position:absolute;
   top: 0px;
   left: 0px;
+  background-color: $black;
    
 }
 #span_list {
@@ -30,3 +44,96 @@ width: 40px;
     transform: rotate(360deg);
   }
 }
+
+ .logo{
+ margin: 0 auto;
+ display: block;
+ }
+ .link_navber{
+  text-decoration: none;
+  color: $black;
+  // background-color: $white;
+  margin-bottom: 20px;
+  // width: 300px;
+  text-align: center;
+  background-color: $white;
+  padding: 5px 10px;
+ border-radius: 10px;
+ 
+ }
+ #div_link ul {
+  list-style-type: none;
+ }
+ #div_link ul li{
+   margin-bottom: 20px;
+  }
+  
+ 
+
+ .icon_réseaux_sociale{
+  text-align: center;
+  margin-top: 20px;
+ }
+ .icon_réseaux_sociale a{
+  text-decoration: none;
+  color: $white;
+  margin: 0 10px;
+ }
+
+ .link_navber:hover{
+  background-color:$primary;
+  color: $white;
+ }
+ #image_de_site{
+  margin: 0 auto;
+  margin-top: 100px;
+  position: absolute;
+  top:0;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+#div_titre{
+ margin: 130px auto;
+ 
+}
+#titre_de_site_1{
+  color: $white;
+  margin-bottom: 20px;
+}
+#titre_de_site_2{
+  color: $primary;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+}
+#opacity_titre_2{
+  background-color: white;
+  opacity: 0.4;
+  width: 600px;
+  margin: 0 auto;
+
+}
+#ville_de_site{
+  color: $white;
+  margin-bottom: 20px;
+}
+#button_header{
+  // margin-bottom: 40px;
+}
+  
+  .button_header{
+     padding: 5px 10px;
+     border: none;
+     border-radius: 10px;
+     margin-bottom: 10px;
+      
+  }
+  .button_header:hover{
+    background-color: $primary;
+    color: $white;
+  }
+
+ 
+ 
+ 
+ 

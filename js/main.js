@@ -2,8 +2,9 @@
  let nav_list = document.getElementById("nav_list");
  let div_link = document.getElementById("navbarToggleExternalContent");
  
+ 
  window.addEventListener("click", (e) => {
-     if (e.target !== btn && e.target !== nav_list) {
+     if (e.target !== btn && e.target !== div_link) {
         div_link.classList.remove("show");
       }
  });

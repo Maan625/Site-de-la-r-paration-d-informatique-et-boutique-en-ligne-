@@ -165,14 +165,10 @@ width: 40px;
   #section_1_main{
     background-color: $tertiary;
     padding: 40px;
-    // padding-bottom: 200px;
+    
    
   }
- @media screen and (max-width: 300px) {
-  #section_1_main{
-    padding-bottom: 250px;
- }
-}
+ 
   #titre_2_atelier{
     color:$white;
     text-align: left;
@@ -191,12 +187,12 @@ width: 40px;
     font-size: 24px;
     text-align: left;
     // width: 600px;
-    height: 400px;
+    // height: 400px;
   }
     .text_important_1{
     color: $secondary;
-    width: 300px;
-    height: 350px;
+    // width: 300px;
+    // height: 350px;
    
   }
 

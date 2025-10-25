@@ -32,15 +32,15 @@
         <div class="collapse " id="navbarToggleExternalContent">
             <div class="bg-dark p-4 " id="div_link">
                 <a href="#"> <img src="/images/Rectangle 2.png" alt="logo" class="logo w-50 "></a>
-                <ul>
-                    <li><a class="link_navber" href="#">Accueil</a></li>
-                    <li><a class="link_navber" href="#"> Réparation informatique</a></li>
-                    <li><a class="link_navber" href="#"> Réparation téléphone</a></li>
-                    <li><a class="link_navber" href="#"> Réparation console de jeux</a></li>
-                    <li><a class="link_navber" href="#"> Micro-soudure</a></li>
-                    <li><a class="link_navber" href="#"> Boutique en ligne </a></li>
-                    <li><a class="link_navber" href="#"> Contact </a></li>
-                </ul>
+                <div class="div_group_link">
+                    <button class="btn_link"><a class="link_navber" href="#"></a>Accueil</button>
+                    <button class="btn_link"><a class="link_navber" href="#"> </a>Réparation informatique</button>
+                    <button class="btn_link"><a class="link_navber" href="#"> </a>Réparation téléphone</button>
+                    <button class="btn_link"><a class="link_navber" href="#"> </a>Réparation console de jeux</button>
+                    <button class="btn_link"><a class="link_navber" href="#"></a> Micro-soudure</button>
+                    <button class="btn_link"><a class="link_navber" href="#"> </a>Boutique en ligne</button>
+                    <button class="btn_link"><a class="link_navber" href="#"> </a>Contact </button>
+                </div>
                 <div class="icon_réseaux_sociale">
                     <a href=""> <i class="bi bi-facebook"></i></a>
                     <a href=""> <i class="bi bi-instagram"></i></a>
@@ -88,20 +88,72 @@
 
     </header>
     <main class="main">
-        <div class="row">
-            <div class="col-md-6">
-                <a href="">
-                    <button class="button_header">Suivi Votre Réparation</button>
-                </a>
-                
-            </div>
-            <div class="col-md-6">
+        <section id="section_1_main">
+            <div class="row justify-content-center text-sm-center  ">
+                <div class="col-md-5 pt-3 ">
+                    <a href="">
+                        <button class="button_header mb-5">Contactez-nous</button>
+                    </a>
+                    <img src="/images/Rectangle 3.png" alt="image_1" class="mb-5 w-75">
+                    <img src="/images/Rectangle 4.png" alt="image_2" class="w-75">
 
+                </div>
+                <div class="col-md-7 pt-5">
+                    <h2 id="titre_2_atelier">Atelier de réparation informatique et téléphonique à Saint-Étienne</h2>
+                    <h1 id="titre_1_atelier">Maintenance de PC, de téléphone ou de consoles de jeux et micro-soudure
+                    </h1>
+                    <p id="para_atelier">Situé à Saint-Étienne,FixTech est un atelier de réparation
+                        informatique et téléphonique. Nous
+                        intervenons pour la réparation de smartphones et de consoles de jeux. Sollicitez-nous également
+                        <strong class="text_important_1"> pour réparer les systèmes hardware et software de tous types
+                            d’ordinateurs et de téléphones.</strong> .Nos prestations en <em class="text_important_2">
+                             dépannage informatique </em>peuvent être réalisées à distance ou à votre domicile.
+                        Découvrez aussi notre large
+                        choix d’accessoires et d’outils pour <strong class="text_important_1"> votre
+                            ordinateur.</strong>
+                        Nous vous proposons la vente de: <strong class="text_important_1">
+                            périphériques, adaptateurs, chargeurs…</strong>
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
 
     </main>
+    <section class="services ">
+       <p id="para_services">Solutions de dépannage informatique</p>
+       <h2 id="titre_services">Nos services</h2>
+       <div class="row    justify-content-md-between  me-5   ">
+        <div class="col-md-3 mb-5 ">
+             <div class="carte_services">
+                   <img class="image_services" src="/images/images_sections/Réparation informatique.png" alt="Réparation informatique" >
+                   <p class="para_services">Réparation informatique</p>
+                   <button class="button_services" ><a href=""></a>En savoir plus</button>
+             </div>
+        </div>
+        <div class="col-md-3 mb-5">
+          <div class="carte_services">
+                   <img class="image_services" src="/images/images_sections/Réparation informatique.png" alt="Réparation informatique" >
+                   <p class="para_services">Réparation informatique</p>
+                   <button class="button_services" ><a href=""></a>En savoir plus</button>
+             </div>
+        </div>
+        <div class="col-md-3 mb-5">
+          <div class="carte_services">
+                   <img class="image_services" src="/images/images_sections/Réparation informatique.png" alt="Réparation informatique" >
+                   <p class="para_services">Réparation informatique</p>
+                   <button class="button_services" ><a href=""></a>En savoir plus</button>
+             </div>
+        </div>
+       </div>
+    </section>
+    <script src="/js/main.js"></script>
 </body>
-<script src="/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
 
 </html>

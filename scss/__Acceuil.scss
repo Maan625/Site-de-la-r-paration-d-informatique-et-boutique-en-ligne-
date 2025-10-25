@@ -7,6 +7,7 @@
 text-align: center;
  padding-top: 10px;
  padding-bottom: 40px;
+ position: relative;
  
  
 }
@@ -49,24 +50,30 @@ width: 40px;
  margin: 0 auto;
  display: block;
  }
+ .div_group_link{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+ }
+ .btn_link{
+  border: none;
+  padding: 5px 10px;
+  color: $black;
+  margin: 5px 0;
+ }
+ .btn_link:hover{
+  background-color: $primary;
+  color: $white;
+ }
  .link_navber{
   text-decoration: none;
   color: $black;
-  // background-color: $white;
-  margin-bottom: 20px;
-  // width: 300px;
   text-align: center;
-  background-color: $white;
-  padding: 5px 10px;
- border-radius: 10px;
+}
  
- }
- #div_link ul {
-  list-style-type: none;
- }
- #div_link ul li{
-   margin-bottom: 20px;
-  }
+ 
+  
+ 
   
  
 
@@ -79,18 +86,15 @@ width: 40px;
   color: $white;
   margin: 0 10px;
  }
-
- .link_navber:hover{
-  background-color:$primary;
-  color: $white;
- }
+ 
  #image_de_site{
-  margin: 0 auto;
+  // margin: 0 auto;
   margin-top: 100px;
   position: absolute;
   top:0;
   right: 0;
   transform: translate(-50%, -50%);
+   
 }
 #div_titre{
  margin: 130px auto;
@@ -111,7 +115,25 @@ width: 40px;
   opacity: 0.4;
   width: 600px;
   margin: 0 auto;
+  text-align: center;
 
+}
+@media screen and (max-width: 600px) {
+ 
+ #opacity_titre_2{
+   width: 400px;
+   opacity: 1;
+ }
+ #div_link{
+  width: 200px;
+ }
+ .btn_link{
+  width: 150px;
+  font-size: 10px;
+ }
+ 
+ 
+ 
 }
 #ville_de_site{
   color: $white;
@@ -124,6 +146,7 @@ width: 40px;
   .button_header{
      padding: 5px 10px;
      border: none;
+     width: 200px;
      border-radius: 10px;
      margin-bottom: 10px;
       
@@ -133,7 +156,111 @@ width: 40px;
     color: $white;
   }
 
+
  
  
  
+  //section main
+
+  #section_1_main{
+    background-color: $tertiary;
+    padding: 40px;
+    // padding-bottom: 200px;
+   
+  }
+ @media screen and (max-width: 300px) {
+  #section_1_main{
+    padding-bottom: 250px;
+ }
+}
+  #titre_2_atelier{
+    color:$white;
+    text-align: left;
+    margin-bottom: 2rem;
+
+  }
+  
+  #titre_1_atelier{
+    color: $secondary;
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+  #para_atelier{
+    color: $white;
+    font-size: 24px;
+    text-align: left;
+    // width: 600px;
+    height: 400px;
+  }
+    .text_important_1{
+    color: $secondary;
+    width: 300px;
+    height: 350px;
+   
+  }
+
+  //section_services
+  .services{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding : 20px;
+    padding-right: 60px;
+
+  }
+  @media screen and (max-width: 600px) {
+    .services{
+      padding-right: 0;
+      padding-left: 60px;
+    }
+     #para_services{
+      // text-align: center;
+      font-size: 16px;
+     }
+  }
+  #para_services{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    // width: 100%;
+  }
+  
+
+  .carte_services{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap:40px;
+   align-items: center;
+   text-align: center;
+  //  margin-bottom: 20px;
+  padding-bottom: 20px;
+   border: 2px solid $black;
+   border-radius: 20px;
+   width: 330px;
+  }
+   
+  .image_services{
+    width: 327px;
  
+   }
+   .para_services{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    
+   }
+   #titre_services{
+     margin-bottom: 20px;
+   }
+   .button_services{
+    border: 1px solid $primary;
+    color: $primary;
+    padding: 5px 20px;
+    border-radius: 10px;
+   }
+   
+  

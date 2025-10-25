@@ -11987,6 +11987,7 @@ textarea.form-control-lg {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 40px;
+  position: relative;
 }
 
 #nav_list {
@@ -12027,22 +12028,28 @@ textarea.form-control-lg {
   display: block;
 }
 
+.div_group_link {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.btn_link {
+  border: none;
+  padding: 5px 10px;
+  color: #000000;
+  margin: 5px 0;
+}
+
+.btn_link:hover {
+  background-color: #0000FF;
+  color: #FFFFFF;
+}
+
 .link_navber {
   text-decoration: none;
   color: #000000;
-  margin-bottom: 20px;
   text-align: center;
-  background-color: #FFFFFF;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
-
-#div_link ul {
-  list-style-type: none;
-}
-
-#div_link ul li {
-  margin-bottom: 20px;
 }
 
 .icon_réseaux_sociale {
@@ -12056,13 +12063,7 @@ textarea.form-control-lg {
   margin: 0 10px;
 }
 
-.link_navber:hover {
-  background-color: #0000FF;
-  color: #FFFFFF;
-}
-
 #image_de_site {
-  margin: 0 auto;
   margin-top: 100px;
   position: absolute;
   top: 0;
@@ -12090,8 +12091,22 @@ textarea.form-control-lg {
   opacity: 0.4;
   width: 600px;
   margin: 0 auto;
+  text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  #opacity_titre_2 {
+    width: 400px;
+    opacity: 1;
+  }
+  #div_link {
+    width: 200px;
+  }
+  .btn_link {
+    width: 150px;
+    font-size: 10px;
+  }
+}
 #ville_de_site {
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -12100,6 +12115,7 @@ textarea.form-control-lg {
 .button_header {
   padding: 5px 10px;
   border: none;
+  width: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -12107,4 +12123,107 @@ textarea.form-control-lg {
 .button_header:hover {
   background-color: #0000FF;
   color: #FFFFFF;
+}
+
+#section_1_main {
+  background-color: #162430;
+  padding: 40px;
+}
+
+@media screen and (max-width: 300px) {
+  #section_1_main {
+    padding-bottom: 250px;
+  }
+}
+#titre_2_atelier {
+  color: #FFFFFF;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+#titre_1_atelier {
+  color: #5858FF;
+  font-size: 48px;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+#para_atelier {
+  color: #FFFFFF;
+  font-size: 24px;
+  text-align: left;
+  height: 400px;
+}
+
+.text_important_1 {
+  color: #5858FF;
+  width: 300px;
+  height: 350px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-right: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .services {
+    padding-right: 0;
+    padding-left: 60px;
+  }
+  #para_services {
+    font-size: 16px;
+  }
+}
+#para_services {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.carte_services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  width: 330px;
+}
+
+.image_services {
+  width: 327px;
+}
+
+.para_services {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#titre_services {
+  margin-bottom: 20px;
+}
+
+.button_services {
+  border: 1px solid #0000FF;
+  color: #0000FF;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */

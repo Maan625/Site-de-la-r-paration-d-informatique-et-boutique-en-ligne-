@@ -493,8 +493,22 @@
   }
  }
  
- 
+ //section footer
 
+ .footer{
+  background-color: $tertiary;
+  padding: 20px;
+  margin-top: 40px;
+ }
+ .plan_du_site{
+  list-style-type: none;
+ }
+ 
+.plan_du_site li a {
+  text-decoration: none;
+  color: $white;
+ 
+}
 
  
  

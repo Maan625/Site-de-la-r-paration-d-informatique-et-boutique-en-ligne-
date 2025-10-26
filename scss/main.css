@@ -12472,6 +12472,21 @@ textarea.form-control-lg {
     font-size: 30px;
   }
 }
+.footer {
+  background-color: #162430;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.plan_du_site {
+  list-style-type: none;
+}
+
+.plan_du_site li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -12485,10 +12491,4 @@ textarea.form-control-lg {
 .plan_du_site li a {
   text-decoration: none;
   color: #FFFFFF;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }/*# sourceMappingURL=main.css.map */

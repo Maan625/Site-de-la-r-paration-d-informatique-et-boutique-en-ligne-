@@ -1,0 +1,61 @@
+ .header_reparation_informatique {
+    background-color: $evenement;
+    padding-top:5px;
+    height: 350px;
+ }
+ .section_titre{
+    margin-bottom: 100px;
+ }
+ .logo__1{
+    position: absolute;
+    top: 65px;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 200px;
+ }
+ #titre_Reparation{
+  margin-top: 100px;
+  font-size: 54px;
+  font-weight: bold;
+  color: $tertiary;
+   text-shadow: 0 10px 20px $black;
+}
+
+//section main
+
+.section_explique{
+    padding: 30px;
+}
+    
+    
+
+.titre_explique{
+    color: blue;
+    font-weight: bold;
+
+}
+.para_explique{
+    margin-top: 4rem;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.button_contactez{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: black;
+    margin-top: 3rem;
+    background-color:$evenement ;
+}
+.button_contactez:hover{
+    background-color: blue;
+    color: white;
+}
+@media screen and (max-width : 600px){
+    .img_reparation{
+        width: 400px;
+        text-align: center;
+        margin-left: 30px;
+    }
+} 

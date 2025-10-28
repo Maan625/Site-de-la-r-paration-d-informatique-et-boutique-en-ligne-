@@ -86,10 +86,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
 }
 #div_titre {
-  margin: 130px auto;
+  margin: 70px auto;
 }
 #titre_de_site_1 {
   color: $white;
@@ -103,8 +103,9 @@
 #opacity_titre_2 {
   background-color: white;
   opacity: 0.4;
-  width: 600px;
+  width: 75%;
   margin: 0 auto;
+  border-radius: 10px;
   text-align: center;
 }
 @media screen and (max-width: 600px) {
@@ -118,6 +119,11 @@
   .btn_link {
     width: 150px;
     font-size: 10px;
+  }
+  #image_de_site{
+    position: static;
+    margin-top: 60px;
+
   }
 }
 #ville_de_site {
@@ -141,6 +147,7 @@
 }
 
 //section main
+ 
 
 #section_1_main {
   background-color: $tertiary;
@@ -155,20 +162,20 @@
 
 #titre_1_atelier {
   color: $secondary;
-  font-size: 48px;
+ 
   text-align: left;
   margin-bottom: 4rem;
 }
 #para_atelier {
   color: $white;
-  font-size: 24px;
+  font-size: 18px;
   text-align: left;
   // width: 600px;
   // height: 400px;
 }
  @media screen and (max-width : 600px){
   #para_atelier {
-    font-size: 18px;
+    font-size: 14px;
   }
  }
 .text_important_1 {

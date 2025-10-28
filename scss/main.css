@@ -12075,11 +12075,11 @@ textarea.form-control-lg {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
 }
 
 #div_titre {
-  margin: 130px auto;
+  margin: 70px auto;
 }
 
 #titre_de_site_1 {
@@ -12096,8 +12096,9 @@ textarea.form-control-lg {
 #opacity_titre_2 {
   background-color: white;
   opacity: 0.4;
-  width: 600px;
+  width: 75%;
   margin: 0 auto;
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -12112,6 +12113,10 @@ textarea.form-control-lg {
   .btn_link {
     width: 150px;
     font-size: 10px;
+  }
+  #image_de_site {
+    position: static;
+    margin-top: 60px;
   }
 }
 #ville_de_site {
@@ -12145,20 +12150,19 @@ textarea.form-control-lg {
 
 #titre_1_atelier {
   color: #E7E13A;
-  font-size: 48px;
   text-align: left;
   margin-bottom: 4rem;
 }
 
 #para_atelier {
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 18px;
   text-align: left;
 }
 
 @media screen and (max-width: 600px) {
   #para_atelier {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 .text_important_1 {

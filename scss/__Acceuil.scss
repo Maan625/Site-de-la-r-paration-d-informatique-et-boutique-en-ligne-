@@ -257,6 +257,14 @@
   background-color: $primary;
   color: $white;
 }
+@media screen and (max-width: 600px) {
+  .carte_services {
+    width: 220px;
+  }
+  .image_services {
+    width: 217px;
+  }
+}
 
 //réparation
 .réparation{

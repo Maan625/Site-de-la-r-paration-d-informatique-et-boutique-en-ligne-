@@ -8,6 +8,7 @@
   padding-top: 10px;
   padding-bottom: 40px;
   position: relative;
+  width: 100%;
 }
 
 #nav_list {
@@ -108,9 +109,9 @@
   border-radius: 10px;
   text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   #opacity_titre_2 {
-    width: 400px;
+    width: 300px;
     opacity: 1;
   }
   #div_link {
@@ -125,6 +126,10 @@
     margin-top: 60px;
 
   }
+  #titre_de_site_2{
+    font-size: 20px;
+  }
+
 }
 #ville_de_site {
   color: $white;
@@ -176,6 +181,12 @@
  @media screen and (max-width : 600px){
   #para_atelier {
     font-size: 14px;
+  }
+  #titre_1_atelier {
+    font-size: 24px;
+  }
+  #titre_2_atelier {
+    font-size: 24px;
   }
  }
 .text_important_1 {
@@ -234,7 +245,7 @@
   //  margin-bottom: 20px;
   padding-bottom: 20px;
   border: 2px solid $black;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 330px;
 }
 
@@ -245,6 +256,7 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .button_services {
@@ -257,19 +269,32 @@
   background-color: $primary;
   color: $white;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
+ 
   .carte_services {
     width: 220px;
+    border-radius: 10px;
+    text-align: center;
+  }
+    
+    
+
+  .para_services {
+    font-size: 16px;
   }
   .image_services {
     width: 217px;
     // border-radius: 10px;
   }
+  #titre_services {
+    font-size: 30px;
+  } 
 }
 
 //réparation
+
 .réparation{
-  margin-top: 100px;
+  margin-top: 20px;
   text-align: center;
   background-color: $tertiary;
   padding: 20px;
@@ -290,16 +315,24 @@
 }
 .para_réparation{
   color: $white;
-  width: 800px;
-  margin: 0 auto;
+  // width: 800px;
+  // margin: 0 auto;
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 16px;
 }
-@media screen and (max-width :600px){
+@media screen and (max-width : 600px){
   .para_réparation{
-    width: 400px;
+    font-size: 12px;
+    // width: 310px;
     text-align: left;
   }
+  .titre_réparation{
+    font-size: 24px;
+  }
+  .hr_réparation{
+    width: 200px;
+  }
+ 
 }
 //section choisir
 

@@ -11994,6 +11994,7 @@ textarea.form-control-lg {
   padding-top: 10px;
   padding-bottom: 40px;
   position: relative;
+  width: 100%;
 }
 
 #nav_list {
@@ -12102,9 +12103,9 @@ textarea.form-control-lg {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   #opacity_titre_2 {
-    width: 400px;
+    width: 300px;
     opacity: 1;
   }
   #div_link {
@@ -12117,6 +12118,9 @@ textarea.form-control-lg {
   #image_de_site {
     position: static;
     margin-top: 60px;
+  }
+  #titre_de_site_2 {
+    font-size: 20px;
   }
 }
 #ville_de_site {
@@ -12163,6 +12167,12 @@ textarea.form-control-lg {
 @media screen and (max-width: 600px) {
   #para_atelier {
     font-size: 14px;
+  }
+  #titre_1_atelier {
+    font-size: 24px;
+  }
+  #titre_2_atelier {
+    font-size: 24px;
   }
 }
 .text_important_1 {
@@ -12214,7 +12224,7 @@ textarea.form-control-lg {
   text-align: center;
   padding-bottom: 20px;
   border: 2px solid #000000;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 330px;
 }
 
@@ -12226,6 +12236,7 @@ textarea.form-control-lg {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .button_services {
@@ -12240,16 +12251,24 @@ textarea.form-control-lg {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
   .carte_services {
     width: 220px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .para_services {
+    font-size: 16px;
   }
   .image_services {
     width: 217px;
   }
+  #titre_services {
+    font-size: 30px;
+  }
 }
 .réparation {
-  margin-top: 100px;
+  margin-top: 20px;
   text-align: center;
   background-color: #162430;
   padding: 20px;
@@ -12272,16 +12291,20 @@ textarea.form-control-lg {
 
 .para_réparation {
   color: #FFFFFF;
-  width: 800px;
-  margin: 0 auto;
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 600px) {
   .para_réparation {
-    width: 400px;
+    font-size: 12px;
     text-align: left;
+  }
+  .titre_réparation {
+    font-size: 24px;
+  }
+  .hr_réparation {
+    width: 200px;
   }
 }
 .choisir {

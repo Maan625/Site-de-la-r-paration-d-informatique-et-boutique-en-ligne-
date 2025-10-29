@@ -12180,12 +12180,22 @@ textarea.form-control-lg {
 }
 
 .services {
+  text-align: center;
+}
+
+#services_1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#service_2 {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  gap: 40px;
   align-items: center;
-  padding: 20px;
-  padding-right: 60px;
 }
 
 #para_services {
@@ -12199,27 +12209,42 @@ textarea.form-control-lg {
   font-weight: bold;
   margin-bottom: 30px;
   color: #0000FF;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
   .services {
-    padding-right: 0;
-    padding-left: 60px;
     text-align: center;
+  }
+  #titre_services {
+    font-size: 24px;
+  }
+  #services_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #service_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   #para_services {
     font-size: 16px;
     margin-right: 4rem;
   }
-  #titre_services {
-    margin-right: 4rem;
+  .carte_services {
+    margin-bottom: 10px;
+    width: 250px;
   }
 }
 .carte_services {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
   text-align: center;
   padding-bottom: 20px;
@@ -12251,22 +12276,6 @@ textarea.form-control-lg {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 320px) {
-  .carte_services {
-    width: 220px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .para_services {
-    font-size: 16px;
-  }
-  .image_services {
-    width: 217px;
-  }
-  #titre_services {
-    font-size: 30px;
-  }
-}
 .réparation {
   margin-top: 20px;
   text-align: center;
@@ -12310,10 +12319,9 @@ textarea.form-control-lg {
 .choisir {
   text-align: center;
   background-color: #43989E;
-  width: 80%;
   margin: 0 auto;
   margin-top: 30px;
-  padding: 20px;
+  padding: 30px;
   border-radius: 30px;
 }
 
@@ -12333,17 +12341,31 @@ textarea.form-control-lg {
 .logo_choisir {
   display: flex;
   justify-content: space-around;
-  gap: 40px;
+  align-items: center;
+  gap: 30px;
   margin-top: 4rem;
-  margin-bottom: 40px;
+  margin-left: 30px;
+}
+
+.para_logo_choisir {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
+  .choisir {
+    width: 100%;
+  }
+  .titre_choisir {
+    font-size: 24px;
+  }
   .logo_choisir {
     flex-direction: column;
+    margin-left: 0;
   }
   .para_choisir {
-    width: 300px;
+    width: 200px;
+    font-size: 16px;
   }
 }
 .para_logo_choisir {
@@ -12373,8 +12395,15 @@ textarea.form-control-lg {
 }
 
 @media screen and (max-width: 600px) {
-  .ifram_trouver {
-    width: 450px;
+  #ifram_trouver {
+    width: 100%;
+    text-align: center;
+  }
+  .titre_trouver {
+    font-size: 24px;
+  }
+  .para_trouver {
+    font-size: 16px;
   }
 }
 .contactez {
@@ -12411,11 +12440,8 @@ textarea.form-control-lg {
 
 .contact {
   background-color: #162430;
-  width: 60%;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 30px;
-  margin-top: 40px;
 }
 
 @media screen and (max-width: 600px) {
@@ -12423,12 +12449,20 @@ textarea.form-control-lg {
     width: 40%;
     margin: 0 auto;
     align-items: center;
+    text-align: center;
+    border-radius: 20px;
     margin-top: 20px;
+  }
+  .titre_contactez {
+    font-size: 24px;
+  }
+  .para_contactez {
+    font-size: 16px;
+    width: 300px;
   }
 }
 .ouvert {
   background-color: #f2f2f2;
-  margin-top: 40px;
   padding: 20px;
   text-align: center;
 }
@@ -12441,7 +12475,8 @@ textarea.form-control-lg {
 
 .ouverture {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
 }
 
 .jours {

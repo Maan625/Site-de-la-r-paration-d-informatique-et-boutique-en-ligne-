@@ -62,13 +62,11 @@
 .btn_link:hover {
   background-color: $primary;
   color: $white;
-
 }
 .link_navber {
   text-decoration: none;
   color: $black;
   text-align: center;
-
 }
 
 .icon_réseaux_sociale {
@@ -121,15 +119,13 @@
     width: 150px;
     font-size: 10px;
   }
-  #image_de_site{
+  #image_de_site {
     position: static;
     margin-top: 60px;
-
   }
-  #titre_de_site_2{
+  #titre_de_site_2 {
     font-size: 20px;
   }
-
 }
 #ville_de_site {
   color: $white;
@@ -152,7 +148,6 @@
 }
 
 //section main
- 
 
 #section_1_main {
   background-color: $tertiary;
@@ -167,7 +162,7 @@
 
 #titre_1_atelier {
   color: $secondary;
- 
+
   text-align: left;
   margin-bottom: 4rem;
 }
@@ -178,7 +173,7 @@
   // width: 600px;
   // height: 400px;
 }
- @media screen and (max-width : 600px){
+@media screen and (max-width: 600px) {
   #para_atelier {
     font-size: 14px;
   }
@@ -188,21 +183,19 @@
   #titre_2_atelier {
     font-size: 24px;
   }
- }
+}
 .text_important_1 {
   color: $secondary;
   // width: 300px;
   // height: 350px;
 }
 
-
-
 //section_services
 .services {
- text-align: center;
- 
+  text-align: center;
+  margin-top: 20px;
 }
-#services_1{
+#services_1 {
   display: flex;
   // justify-content: space-around;
   flex-wrap: wrap;
@@ -211,7 +204,7 @@
   // align-items: center;
   margin-bottom: 30px;
 }
-#service_2{
+#service_2 {
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -230,6 +223,7 @@
   margin-bottom: 30px;
   color: $primary;
   text-align: center;
+  text-shadow: 0px 10px 20px blue;
 }
 @media screen and (max-width: 600px) {
   .services {
@@ -238,22 +232,16 @@
     text-align: center;
   }
   #titre_services {
-    font-size: 24px;
+    font-size: 30px;
   }
-  #services_1{
+  #services_1 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  // #service_2{
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   flex-direction: column;
  
-  // }
-  #service_2{
+  #service_2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,13 +252,12 @@
     font-size: 16px;
     margin-right: 4rem;
   }
- 
-  .carte_services{
+
+  .carte_services {
     margin-bottom: 10px;
     width: 250px;
   }
 }
-
 
 .carte_services {
   display: flex;
@@ -306,75 +293,72 @@
   background-color: $primary;
   color: $white;
 }
- 
+
 //réparation
 
-.réparation{
+.réparation {
   margin-top: 20px;
   text-align: center;
   background-color: $tertiary;
   padding: 20px;
   border-radius: 30px;
-  
 }
-.hr_réparation{
-  width:300px;
+.hr_réparation {
+  width: 300px;
   margin: 0 auto;
   margin-top: 40px;
   border: 2px solid $white;
 }
-.titre_réparation{
- color: $secondary;
+.titre_réparation {
+  color: $secondary;
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.para_réparation{
+.para_réparation {
   color: $white;
   // width: 800px;
   // margin: 0 auto;
   margin-top: 40px;
   font-size: 16px;
 }
-@media screen and (max-width : 600px){
-  .para_réparation{
+@media screen and (max-width: 600px) {
+  .para_réparation {
     font-size: 12px;
     // width: 310px;
     text-align: left;
   }
-  .titre_réparation{
+  .titre_réparation {
     font-size: 24px;
   }
-  .hr_réparation{
+  .hr_réparation {
     width: 200px;
   }
- 
 }
 //section choisir
 
-.choisir{
-  
+.choisir {
   text-align: center;
   background-color: $button;
- 
+
   margin: 0 auto;
   margin-top: 30px;
   padding: 30px;
   border-radius: 30px;
 }
-.titre_choisir{
+.titre_choisir {
   color: $white;
-  font-weight:bold;
+  font-weight: bold;
 }
-.para_choisir{
-  font-size:24px;
+.para_choisir {
+  font-size: 24px;
   width: 500px;
   margin: 0 auto;
   margin-top: 20px;
   font-weight: bold;
 }
 
-.logo_choisir{
+.logo_choisir {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -383,112 +367,107 @@
   margin-left: 30px;
   // margin-bottom: 40px;
 }
-.para_logo_choisir{
+.para_logo_choisir {
   font-size: 20px;
   font-weight: bold;
 }
-@media screen and (max-width :600px){
-  .choisir{
+@media screen and (max-width: 600px) {
+  .choisir {
     width: 100%;
-   
   }
-  .titre_choisir{
+  .titre_choisir {
     font-size: 24px;
   }
-  .logo_choisir{
+  .logo_choisir {
     flex-direction: column;
     margin-left: 0;
   }
-  .para_choisir{
+  .para_choisir {
     width: 200px;
-  
+
     font-size: 16px;
   }
 }
-.para_logo_choisir{
+.para_logo_choisir {
   color: $white;
   font-weight: bold;
   margin-top: 20px;
 }
-  
+
 //trouver
 
-.trouver{
+.trouver {
   background-color: $evenement;
   margin-top: 20px;
   padding: 20px;
 }
-.para_trouver{
-  color:$black;
+.para_trouver {
+  color: $black;
   font-weight: bold;
   font-size: 28px;
 }
-.titre_trouver{
+.titre_trouver {
   color: $primary;
   font-weight: bold;
   margin-top: 3rem;
   margin-bottom: 4rem;
   font-size: 53px;
 }
- @media screen and (max-width : 600px){
-  #ifram_trouver{
+@media screen and (max-width: 600px) {
+  #ifram_trouver {
     width: 100%;
     text-align: center;
   }
-  .titre_trouver{
+  .titre_trouver {
     font-size: 24px;
-  
- }
- .para_trouver{
-  font-size: 16px;
- }
+  }
+  .para_trouver {
+    font-size: 16px;
+  }
 }
- //section contactez
+//section contactez
 
- .contactez{
+.contactez {
   text-align: center;
   background-color: $button;
   padding: 20px;
- }
- .hr_contactez{
-   width:300px;
+}
+.hr_contactez {
+  width: 300px;
   margin: 0 auto;
   margin-top: 40px;
-  border: 2px solid $black; 
- }
- .para_contactez{
+  border: 2px solid $black;
+}
+.para_contactez {
   color: $white;
   font-weight: bold;
   font-size: 22px;
   width: 600px;
   margin: 0 auto;
   margin-top: 40px;
- }
- @media screen and (max-width : 600px){
-  .para_contactez{
+}
+@media screen and (max-width: 600px) {
+  .para_contactez {
     width: 350px;
   }
- }
- .titre_contactez{
+}
+.titre_contactez {
   font-size: 60px;
   font-weight: bold;
- }
+}
 
- //section contact
+//section contact
 
- .contact{
+.contact {
   background-color: $tertiary;
-  // width: 60%;
-  margin: 0 auto;
-  padding: 20px;
+  
  
-  // margin-top: 40px;
+  padding: 20px;
 
-  
-  
- }
- @media screen and (max-width : 600px){
-  .contact{
+ 
+}
+@media screen and (max-width: 600px) {
+  .contact {
     width: 40%;
     margin: 0 auto;
     align-items: center;
@@ -496,78 +475,85 @@
     border-radius: 20px;
     margin-top: 20px;
   }
-  .titre_contactez{
+  .titre_contactez {
     font-size: 24px;
   }
-  .para_contactez{
+  .para_contactez {
     font-size: 16px;
-   width: 300px;
+    width: 300px;
   }
+  .para_map{
+    font-size: 12px;
+  }
+  .para_numero{
+    font-size: 12px;
+  }
+  .para_email{
+    font-size: 12px;
+  }
+}
 
-  
-
- }
-
- //section horaires d'ouverture
-.ouvert{
+//section horaires d'ouverture
+.ouvert {
   background-color: $evenement;
   // margin-top: 40px;
   padding: 20px;
   text-align: center;
-
 }
-.ouvert h2 strong{
-   color:black;
-   font-weight: bold;
-   font-size: 40px;
+.ouvert h2 strong {
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
 }
- .ouverture{
+.ouverture {
   display: flex;
   justify-content: center;
   gap: 30px;
- }
- .jours{
+}
+.jours {
   text-align: center;
   border: 2px solid $black;
   padding: 5px 10px;
   border-radius: 20px;
   margin-top: 20px;
- }
- .jour{
+}
+.jour {
   font-weight: bold;
   color: black;
- }
- .horaires{
+}
+.horaires {
   // font-weight: bold;
   color: black;
- }
- @media screen and (max-width :600px){
-  .ouverture{
+}
+@media screen and (max-width: 600px) {
+  .ouverture {
     flex-direction: column;
     align-items: center;
   }
- }
- 
+  #titre_ouvert{
+    font-size: 30px;
+  }
+}
 
- //section formulaire
+//section formulaire
 
-.formulaire{
+.formulaire {
   margin-top: 30px;
   // padding: 30px;
 }
-.titre_formulaire{
+.titre_formulaire {
   color: black;
   font-weight: bold;
   font-size: 52px;
 }
- .n_p_e_t{
+.n_p_e_t {
   display: flex;
   justify-content: space-between;
   gap: 40px;
   margin-top: 40px;
   text-align: left;
- }
- .form{
+}
+.form {
   color: $white;
   background-color: $tertiary;
   display: flex;
@@ -577,44 +563,37 @@
   margin: 0 auto;
   padding: 20px;
   border-radius: 30px;
- 
- }
- .opjet_textarea{
+}
+.opjet_textarea {
   text-align: left;
   margin-right: 10px;
   margin-top: 40px;
- }
+}
 
- @media screen and (max-width : 600px){
-  .n_p_e_t{
+@media screen and (max-width: 600px) {
+  .n_p_e_t {
     flex-direction: column;
   }
-  .form{
+  .form {
     width: 300px;
   }
-  .titre_formulaire{
-    font-size: 
-    30px;
+  .titre_formulaire {
+    font-size: 30px;
   }
- }
- 
- //section footer
+}
 
- .footer{
+//section footer
+
+.footer {
   background-color: $tertiary;
   padding: 20px;
   margin-top: 40px;
- }
- .plan_du_site{
+}
+.plan_du_site {
   list-style-type: none;
- }
- 
+}
+
 .plan_du_site li a {
   text-decoration: none;
   color: $white;
- 
 }
- 
- 
- 
- 

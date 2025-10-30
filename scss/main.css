@@ -12533,12 +12533,16 @@ textarea.form-control-lg {
 .nom_prenom {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  margin-left: 10px;
   gap: 10px;
 }
 
 .email_telephone {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  margin-left: 10px;
   gap: 10px;
 }
 
@@ -12571,16 +12575,10 @@ textarea.form-control-lg {
     justify-content: center;
   }
   .form {
-    width: 300px;
+    width: 500px;
   }
   .titre_formulaire {
     font-size: 30px;
-  }
-  .nom_prenom, .email_telephone {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
   }
   input {
     width: 100%;

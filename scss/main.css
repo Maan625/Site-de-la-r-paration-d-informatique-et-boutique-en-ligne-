@@ -12578,6 +12578,8 @@ textarea.form-control-lg {
   }
   .nom_prenom, .email_telephone {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   input {
     width: 100%;

@@ -103,7 +103,7 @@
 
                 </div>
                 <div class="col-md-7 pt-5 text-center">
-                    <h2 id="titre_2_atelier">Atelier de réparation informatique et téléphonique à Saint-Étienne</h2>
+                    <h2 id="titre_2_atelier">Boutique and atelier de réparation informatique et téléphonique à Saint-Étienne</h2>
                     <h2 id="titre_1_atelier">Maintenance de PC, de téléphone ou de consoles de jeux et micro-soudure
                     </h2>
                     <p id="para_atelier">Situé à Saint-Étienne,FixTech est un atelier de réparation
@@ -222,7 +222,7 @@
                 <div class="col-md-6">
                     <p class="para_trouver">Assistance informatique et téléphonie à Saint-Etienne </p>
                     <h2 class="titre_trouver">Où nous trouver pour la réparation informatique ?</h2>
-                    <p class="fw-bolder text-dark"><em class="fw-normal text-dark">Nous sommes situé au</em> 10 Rue de la Gare, 42000 Saint-Etienne</p>
+                    <p class="fw-bolder text-dark fs-5 "><em class="fw-normal text-dark">Nous sommes situé au</em> 10 Rue de la Gare, 42000 Saint-Etienne</p>
                 </div>
                 <div class="col-md-6">
                     <iframe id="ifram_trouver"
@@ -245,8 +245,8 @@
 
         </section>
         <!-- section maps , téléphone et email -->
-        <section class="contact">
-            <div class="row justify-content-md-between ">
+        <section class="contact ">
+            <div class="row justify-content-md-between  ">
                 <div class="col-md-3 mb-2  text-center">
                     <img src="images/contacte/map.png" alt="image_map">
                     <p class="para_map text-light me-2 ">10 Rue de la Gare <br> 42000 Saint-Etienne</p>
@@ -257,7 +257,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <img src="images/contacte/email.png" alt="image_email">
-                    <p class=" para_email text-light">g7k6o@example.com</p>
+                    <p class=" para_email text-light">Example@gmail.com</p>
                 </div>
             </div>
 
@@ -293,32 +293,39 @@
             </section>
         </section>
 
-        <section class="formulaire justify-content-center ">
+        <section class="formulaire justify-content-center mb-3 ">
             <h2 class="titre_formulaire text-center mb-5"> Formulaire de contact</h2>
             <form class="form" action="">
                 <section class="n_p_e_t">
                     <div class="nom_prenom">
+                        <div>
                         <label for="prénom">Prénom</label><br>
                         <input type="text" name="prénom" id="prénom">
+                        </div>
                         <br><br>
+                        <div>
                         <label for="nom">Nom</label><br>
                         <input type="text" name="nom" id="nom">
+                        </div>
                     </div>
-                    <div class="email_telephone">
+                    <div class="email_telephone mt-4">
+                        <div>
                         <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email">
+                        <input  type="email" name="email" id="email">
+                        </div>
                         <br><br>
+                        <div>
                         <label for="telephone">Telephone</label><br>
                         <input type="tel" name="telephone" id="telephone">
-
+                       </div>
                     </div>
                 </section>
                 <section class="opjet_textarea">
-                    <label for="objet">Objet</label><br>
-                    <input class="w-100" type="text" name="objet" id="objet">
+                    <label class="ms-2" for="objet">Objet</label><br>
+                    <input class="w-100 ms-2" type="text" name="objet" id="objet">
                     <br><br>
-                    <label for="message">Message</label><br>
-                    <textarea class="w-100" name="message" id="message" cols="30" rows="10"></textarea>
+                    <label class="ms-2" for="message">Message</label><br>
+                    <textarea class="w-100 ms-2 texterea" name="message" id="message" cols="30" rows="10"></textarea>
 
 
                 </section>
@@ -330,34 +337,37 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="row justify-content-md-between">
-            <div class="col-md-4 text-center  mb-5">
-                <img src="images/Rectangle 2.png" alt="">
+        <div class="div_footer ">
+            <div class="logo_social d-flex ">
+                <img  src="images/Rectangle 2.png" alt="">
                 <div class="icon_réseaux_sociale">
                     <a href=""> <i class="bi bi-facebook"></i></a>
                     <a href=""> <i class="bi bi-instagram"></i></a>
                     <a href=""> <i class="bi bi-twitter"></i></a>
                 </div>
             </div>
-            <div class="col-md-4 text-light text-center mb-5 ">
-                <h2>Contactez-nous</h2>
+            <div class="contact_map text-light ">
+                <!-- <h2>Contactez-nous</h2> -->
+                <div>
                 <i class="bi bi-geo-alt-fill"> 10 Rue de la Gare <br> 42000 Saint-Etienne</i><br><br>
                 <i class="bi bi-envelope-fill"> g7k6o@example.com</i><br><br>
                 <i class="bi bi-telephone-fill"> 04 77 57 17 38</i>
+                </div>
             </div>
-            <div class="col-md-4 text-light text-center">
-                <h2 class="titre_plan">plan du site</h2>
+            <div class="plan_de_site ">
+                <!-- <h2 class="titre_plan text-light">plan du site</h2> -->
                 <ul class="plan_du_site">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="reparation_informatique.html">Réparation informatique</a></li>
-                    <li><a href="reparation_telephone.html">Réparation telephone</a></li>
-                    <li><a href="#">Réparation console de jeux</a></li>
-                    <li><a href="#">Micro-soudure</a></li>
-                    <li><a href="#">Boutique en ligne</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="line"><a href="index.html">Accueil</a></li>
+                    <li class="line"><a href="reparation_informatique.html">Réparation informatique</a></li>
+                    <li class="line"><a href="reparation_telephone.html">Réparation telephone</a></li>
+                    <li class="line"><a href="#">Réparation console de jeux</a></li>
+                    <li class="line"><a href="#">Micro-soudure</a></li>
+                    <li class="line"><a href="#">Boutique en ligne</a></li>
+                    <li class="line"><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
+        <p class="text-light text-center mt-3">Copyright© 2025 - 2026 -  Tous droits reservé </p>
     </footer>
 
 

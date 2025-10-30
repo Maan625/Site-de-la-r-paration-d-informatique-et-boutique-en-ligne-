@@ -2,6 +2,7 @@
 const div_link = document.getElementById("navbarToggleExternalContent");
 const image_site = document.getElementById("image_de_site");
 
+
 btn.addEventListener("click", (e) => {
   e.stopPropagation();  
   image_site.style.opacity = "0";

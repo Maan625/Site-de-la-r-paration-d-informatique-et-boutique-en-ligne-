@@ -454,6 +454,9 @@
 .titre_contactez {
   font-size: 60px;
   font-weight: bold;
+  color: black;
+  
+  
 }
 
 //section contact
@@ -468,12 +471,13 @@
 }
 @media screen and (max-width: 600px) {
   .contact {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     align-items: center;
     text-align: center;
     border-radius: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   .titre_contactez {
     font-size: 24px;
@@ -499,6 +503,8 @@
   // margin-top: 40px;
   padding: 20px;
   text-align: center;
+  border-bottom: 2px solid $black;
+
 }
 .ouvert h2 strong {
   color: black;
@@ -509,6 +515,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+  padding-bottom: 20px;
 }
 .jours {
   text-align: center;
@@ -539,19 +546,35 @@
 
 .formulaire {
   margin-top: 30px;
+ 
   // padding: 30px;
 }
 .titre_formulaire {
   color: black;
   font-weight: bold;
   font-size: 52px;
+  text-shadow: 0 10px 20px black;
 }
-.n_p_e_t {
+// .n_p_e_t {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 40px;
+//   margin-top: 40px;
+//   text-align: left;
+// }
+.nom_prenom{
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  margin-top: 40px;
-  text-align: left;
+  justify-content: space-around;
+  gap: 10px;
+ 
+}
+.email_telephone{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.texterea{
+  border-radius: 10px;
 }
 .form {
   color: $white;
@@ -563,6 +586,7 @@
   margin: 0 auto;
   padding: 20px;
   border-radius: 30px;
+ 
 }
 .opjet_textarea {
   text-align: left;
@@ -576,18 +600,51 @@
   }
   .form {
     width: 300px;
+    // text-align: center;
   }
   .titre_formulaire {
     font-size: 30px;
   }
+  .nom_prenom , .email_telephone{
+    flex-direction: column;
+  }
+  input{
+    width: 100%;
+  }
 }
 
 //section footer
+.logo_social{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
 
 .footer {
   background-color: $tertiary;
   padding: 20px;
   margin-top: 40px;
+  // display: flex;
+  // justify-content: space-around;
+  // flex-direction: column;
+  // align-items: center;
+  // text-align: center;
+}
+.div_footer{
+  display: flex;
+  justify-content: space-between;
+  // flex-direction: column;
+  align-items: center;
+  // text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .div_footer{
+    flex-direction: column;
+    gap: 30px;
+    padding: 20x;
+  }
 }
 .plan_du_site {
   list-style-type: none;
@@ -596,4 +653,13 @@
 .plan_du_site li a {
   text-decoration: none;
   color: $white;
+}
+
+.line a:hover{
+  text-decoration: underline;
+  text-decoration-color: $secondary;
+  text-decoration-thickness: 1px;
+  text-decoration-style: solid;
+  -moz-text-decoration-style: dotted;
+  color: $secondary;
 }

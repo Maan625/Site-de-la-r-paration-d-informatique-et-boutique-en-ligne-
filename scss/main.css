@@ -12569,19 +12569,14 @@ textarea.form-control-lg {
 }
 
 @media screen and (max-width: 600px) {
-  .n_p_e_t {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   .form {
-    width: 500px;
+    width: 430px;
   }
   .titre_formulaire {
     font-size: 30px;
   }
   input {
-    width: 100%;
+    width: 100;
   }
 }
 .logo_social {

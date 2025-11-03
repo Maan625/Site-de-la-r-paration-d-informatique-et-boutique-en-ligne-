@@ -1,0 +1,33 @@
+.header_boutique{
+    padding: 5px 0 5px 0;
+    background-color: $evenement;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input_search{
+    // display: inline-block;
+}
+#icon_fill{
+    font-size: 40px;
+     
+}
+#icon_person{
+    font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+    .heaader_boutique{
+        display: flex;
+        
+        justify-content: center;
+    }
+    #icon_fill{
+        font-size: 20px;
+    }
+    #icon_person{
+        font-size: 20px;
+    }
+    .input_search{
+        margin-left: 20px;
+    }
+}

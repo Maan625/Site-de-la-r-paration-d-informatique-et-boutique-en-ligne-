@@ -1,3 +1,4 @@
+
 .header_boutique{
     padding: 5px 0 5px 0;
     background-color: $evenement;
@@ -5,22 +6,18 @@
     justify-content: space-between;
     align-items: center;
 }
-.input_search{
-    // display: inline-block;
-}
+// #input_search{
+//     background-color: red;
+// }
 #icon_fill{
     font-size: 40px;
-     
 }
+     
 #icon_person{
     font-size: 40px;
 }
 @media screen and (max-width: 600px) {
-    .heaader_boutique{
-        display: flex;
-        
-        justify-content: center;
-    }
+   
     #icon_fill{
         font-size: 20px;
     }
@@ -31,3 +28,114 @@
         margin-left: 20px;
     }
 }
+
+
+//main 
+#titre_boutique{
+    color: black;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+ 
+ 
+}
+
+#liens_boutique{
+    background-color: $tertiary;
+    padding: 30px 0 10px 0;
+    
+}
+.line_boutique{
+    text-decoration: none;
+    color: $white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px;
+    
+    
+    
+}
+
+.line_boutique:hover{
+   border-bottom: 2px solid $white;
+   margin: 5px;
+   padding: 2px;
+    
+}
+
+//section présentation de la boutique
+.titre_presentation{
+    color:$blue_boutique;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.para_presentation{
+    color: $black;
+    width: 90%;
+    font-size: 20px;
+}
+
+@media screen and (max-width :600px){
+    .titre_presentation{
+        font-size: 24px;
+    }
+    .para_presentation{
+        font-size: 16px;
+    }
+ 
+
+}
+
+//section produits phares
+    .produits_phares{
+            background-color: $tertiary;
+            padding: 20px 0 20px 0;
+            
+    }
+    .titre_produits_phares{
+        margin-bottom: 20px;
+        font-size: 40px;
+        background-color: white;
+        color: $tertiary;
+        padding: 10px 0 10px 0;
+        width: 400px;
+        margin: 40px auto;
+        border-radius: 20px;
+    }
+    .titre_produits_meilleures {
+            margin-bottom: 20px;
+        font-size: 40px;
+        background-color: white;
+        color: $tertiary;
+        padding: 10px 0 10px 0;
+        width: 600px;
+        margin: 40px auto;
+        border-radius: 20px;
+    }
+    @media screen and (max-width :600px){
+        .titre_produits_phares{
+            font-size: 24px;
+            width: 300px;
+        }
+        .titre_produits_meilleures{
+            font-size: 24px;
+            width: 400px;
+        }
+        
+    }
+
+    .produits_phares .row {
+            justify-content: center !important;
+            gap: 2rem;
+        }
+
+        .produits_phares .card {
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .produits_phares .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+

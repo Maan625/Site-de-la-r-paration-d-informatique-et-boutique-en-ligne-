@@ -85,7 +85,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(0, -50%);
+  transform: translate(0, -70%);
 }
  .phone{
    position: fixed;   
@@ -157,9 +157,7 @@
   color: $white;
   margin-bottom: 20px;
 }
-#button_header {
-  // margin-bottom: 40px;
-}
+ 
 
 .button_header {
   padding: 5px 10px;
@@ -572,6 +570,8 @@
 
 .formulaire {
   margin-top: 30px;
+  // margin-bottom: 20px;
+  border-top: 3px solid $white;
  
   // padding: 30px;
 }
@@ -653,7 +653,7 @@
 .footer {
   background-color: $tertiary;
   padding: 20px;
-  margin-top: 40px;
+  // margin-top: 40px;
   // display: flex;
   // justify-content: space-around;
   // flex-direction: column;

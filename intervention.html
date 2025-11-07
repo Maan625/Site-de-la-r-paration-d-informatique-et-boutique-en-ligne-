@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        margin: 0 auto;
+    }
+
+    .intervention {
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 20px;
+        padding-top: 100px;
+        width: 600px;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: all 0.5s ease-in-out;
+        
+    }
+
+    .intervention:hover {
+        transform: scale(1.1);
+     }
+
+
+    .intervention input {
+        margin: 50px auto;
+        margin-top: 20px;
+        width: 400px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    #arrow{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 40px;
+        color:white;
+        font-weight: bold;
+        background-color: blue;
+        padding: 5px 20px 5px 20px;
+        border-radius: 20px;
+    }
+</style>
+
+<body class="text-center">
+    
+    <a  href="index.html"><i id="arrow" class="bi bi-arrow-left "></i></a>
+    <img src="images/ChatGPT Image 13 oct. 2025, 20_55_41.png" width="200" alt="">
+    <div class="intervention">
+        <input class="input1" type="text" id="intervention" placeholder=" N° d'intervention">
+        <input class="input2" type="text" id="téléphone" placeholder=" N° de téléphone">
+        <a href="">
+    
+            <button type="button" class="btn btn-outline-primary">Suivi Votre Réparation</button>
+        </a>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

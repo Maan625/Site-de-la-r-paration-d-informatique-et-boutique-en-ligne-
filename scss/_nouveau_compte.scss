@@ -1,0 +1,74 @@
+.créer_compte{
+  color: $button;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+.form_contact {
+  background-color: $tertiary;
+ 
+  width: 350px;
+  margin: 60px auto;
+  padding: 20px;
+ border-radius: 20px;
+  color: $white;
+}
+.form_contact_deja {
+     background-color: $tertiary;
+ 
+  width: 350px;
+  margin: 60px auto;
+  padding: 20px;
+ border-radius: 20px;
+  color: $white;
+  display: none;
+}
+.btn_inscrir{
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: $button;
+  border: none;
+  color: $white;
+ 
+  margin-top: 10px;
+  text-align: center;
+}
+.main_compte {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+ 
+.image_article {
+ 
+  animation: slider 6s ease-in-out infinite alternate;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px 0;
+  height: 600px; // Add a height to make the image visible
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(../images/8f2f424e-c686-433a-b328-473a7feafe86.png);
+  }
+  25% {
+    background-image: url(https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170);
+  }
+  50% {
+    background-image: url(https://media.istockphoto.com/id/1297013078/fr/photo/femme-utilisant-le-t%C3%A9l%C3%A9phone-portable-avec-l%C3%A9cran-daccueil-ouvert-affichant-diff%C3%A9rentes.jpg?s=612x612&w=is&k=20&c=PxEhGFWi3mJEVVV5EVEQSpQyg6Va4teFRe1FfobRH6w=);
+  }
+  100% {
+    background-image: url(https://plus.unsplash.com/premium_photo-1673548917361-12f3c0cf51a9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987);
+  }
+}
+
+ @media screen and (max-width: 768px) {
+  .main_compte {
+    grid-template-columns: 1fr;
+  }
+ 
+}
+.dark-mode .créer_compte{
+  color: $secondary;
+}

@@ -473,3 +473,51 @@
         priceSelect.addEventListener('change', applyFilters);
       }
     });
+
+//filter boutique complete
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchInput = document.getElementById('boutiqueSearchInput');
+      const categoryFilter = document.getElementById('categoryFilter');
+      const priceFilter = document.getElementById('priceFilter');
+      const productCards = document.querySelectorAll('.product-card');
+
+      function matchesPrice(price, rule) {
+        if (!rule || rule === 'all') return true;
+        const p = parseFloat(price);
+        if (isNaN(p)) return true;
+
+        if (rule === 'lt200') return p < 200;
+        if (rule === '200-500') return p >= 200 && p <= 500;
+        if (rule === 'gt500') return p > 500;
+        return true;
+      }
+
+      function filterProducts() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        const selectedCategory = categoryFilter.value;
+        const selectedPriceRule = priceFilter.value;
+
+        productCards.forEach(card => {
+          const name = (card.dataset.name || '').toLowerCase();
+          const category = (card.dataset.category || '').toLowerCase();
+          const price = card.dataset.price || '';
+
+          const col = card.closest('.col-auto') || card;
+
+          const nameMatch = !searchTerm || name.includes(searchTerm);
+          const categoryMatch = selectedCategory === 'all' || category === selectedCategory;
+          const priceMatch = matchesPrice(price, selectedPriceRule);
+
+          if (nameMatch && categoryMatch && priceMatch) {
+            col.classList.remove('d-none');
+          } else {
+            col.classList.add('d-none');
+          }
+        });
+      }
+
+      searchInput.addEventListener('input', filterProducts);
+      categoryFilter.addEventListener('change', filterProducts);
+      priceFilter.addEventListener('change', filterProducts);
+    });

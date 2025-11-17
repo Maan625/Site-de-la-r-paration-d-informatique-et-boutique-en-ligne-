@@ -12548,7 +12548,6 @@ textarea.form-control-lg {
 }
 .formulaire {
   margin-top: 30px;
-  border-top: 3px solid #FFFFFF;
 }
 
 .titre_formulaire {
@@ -12649,6 +12648,69 @@ textarea.form-control-lg {
   text-decoration-style: solid;
   -moz-text-decoration-style: dotted;
   color: #E7E13A;
+}
+
+#modeButton {
+  position: fixed;
+  top: 100px;
+  left: 15px;
+  z-index: 999;
+  background-color: #0000FF;
+  color: #222;
+  border: 2px solid #FFFFFF;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.dark-mode .header_reparation_informatique {
+  background-color: #162430;
+  color: #FFFFFF;
+}
+
+.dark-mode #titre_Reparation {
+  color: #FFFFFF;
+}
+
+.dark-mode .ouvert {
+  background-color: #FDB913;
+}
+
+.dark-mode .jours {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.dark-mode .titre_formulaire {
+  color: #FFFFFF;
+}
+
+.dark-mode .carte_services {
+  border: 2px solid #FFFFFF;
+  background-color: #FDB913;
+  color: #000000;
+}
+
+.dark-mode .trouver {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.dark-mode .para_trouver {
+  color: #FFFFFF;
+}
+
+.dark-mode .para_position {
+  color: #FFFFFF;
 }
 
 .header_reparation_informatique {
@@ -12774,6 +12836,22 @@ textarea.form-control-lg {
     margin-left: 20px;
   }
 }
+.icon_panier {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 0 0 0 5px;
+  font-size: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.icon_panier:hover {
+  background-color: #007bff;
+  color: #FFFFFF;
+}
+
 #titre_boutique {
   color: black;
   font-weight: bold;
@@ -12782,7 +12860,7 @@ textarea.form-control-lg {
 
 #liens_boutique {
   background-color: #162430;
-  padding: 30px 0 10px 0;
+  padding: 10px;
 }
 
 .line_boutique {
@@ -12872,6 +12950,29 @@ textarea.form-control-lg {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.dark-mode #titre_boutique {
+  color: #FFFFFF;
+}
+
+.dark-mode .para_presentation {
+  color: #FFFFFF;
+}
+
+.dark-mode .card {
+  color: #000000;
+}
+
+.btn-link {
+  position: obsolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-group {
+    flex-direction: column;
+  }
+}
 .créer_compte {
   color: #43989E;
   margin-top: 20px;
@@ -12943,4 +13044,12 @@ textarea.form-control-lg {
 }
 .dark-mode .créer_compte {
   color: #E7E13A;
+}
+
+.dark-mode .para_explique {
+  color: #FFFFFF;
+}
+
+.dark-mode .para_presentation {
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

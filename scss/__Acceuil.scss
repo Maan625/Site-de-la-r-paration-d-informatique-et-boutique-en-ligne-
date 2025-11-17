@@ -570,10 +570,7 @@
 
 .formulaire {
   margin-top: 30px;
-  // margin-bottom: 20px;
-  border-top: 3px solid $white;
  
-  // padding: 30px;
 }
 .titre_formulaire {
   color: black;
@@ -691,3 +688,73 @@
   -moz-text-decoration-style: dotted;
   color: $secondary;
 }
+
+
+
+#modeButton {
+  position: fixed;
+  top: 100px;
+  left: 15px;
+
+  z-index: 999;
+
+  background-color: $primary;
+  color: #222;
+
+  border:2px solid $white;
+
+  padding: 10px 18px;
+
+  border-radius: 25px;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.3s ease;
+}
+.dark-mode {
+  background-color: $black;
+  color: $white;
+}
+
+
+.dark-mode .header_reparation_informatique{
+  background-color: $tertiary;
+  color: $white;
+}
+.dark-mode #titre_Reparation{
+  color:$white;
+}
+ 
+.dark-mode .ouvert{
+  background-color: $mode_nuit;
+}
+
+.dark-mode .jours{
+  border: 2px solid $white;
+  color: $white;
+}
+
+ .dark-mode .titre_formulaire{
+   color: $white;
+ }
+
+ .dark-mode .carte_services{
+    border: 2px solid $white;
+    background-color: $mode_nuit;
+    color: $black;
+ }
+ .dark-mode .trouver{
+    background-color: $black;
+    color: $white;
+ }
+ .dark-mode .para_trouver {
+    color: $white;
+ }
+ .dark-mode .para_position {
+    color: $white;
+ }

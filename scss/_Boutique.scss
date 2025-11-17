@@ -29,7 +29,21 @@
     }
 }
 
+.icon_panier{
+   background-color: $white;
+   padding: 10px;
+ 
+   border-radius: 0 0 0 5px;
+    font-size: 20px;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+.icon_panier:hover{
+    background-color: #007bff;
 
+    color: $white;
+}
 //main 
 #titre_boutique{
     color: black;
@@ -41,7 +55,8 @@
 
 #liens_boutique{
     background-color: $tertiary;
-    padding: 30px 0 10px 0;
+    padding:10px;
+  
     
 }
 .line_boutique{
@@ -139,3 +154,31 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
+
+
+
+
+
+        .dark-mode #titre_boutique{
+            color: $white;
+        }
+        .dark-mode .para_presentation{
+            color: $white;
+        }
+        .dark-mode .card{
+            color: $black;
+        }
+
+
+        .btn-link{
+         position: obsolute;
+         top:0;
+            right:0;
+        }
+
+        @media screen and (max-width :600px){
+           .btn-group{
+            flex-direction: column;
+           }
+            
+        }

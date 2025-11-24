@@ -169,355 +169,141 @@
 
 
 
-//filter smartphone
-      document.addEventListener('DOMContentLoaded', function () {
-      const searchInput = document.getElementById('searchSmartphone');
-      const filterButtons = document.querySelectorAll('#smartphoneFilters button');
-      const cards = document.querySelectorAll('.product-card');
-
-      const priceSelect = document.getElementById('priceFilter');
-      const storageSelect = document.getElementById('storageFilter');
-
-      let currentBrandFilter = 'all';
-
-      function applyFilters() {
-        const term = searchInput ? searchInput.value.trim().toLowerCase() : '';
-        const priceFilter = priceSelect ? priceSelect.value : 'all';
-        const storageFilter = storageSelect ? storageSelect.value : 'all';
-
-        cards.forEach(card => {
-          const name = (card.dataset.name || card.querySelector('.card-title').textContent).toLowerCase();
-          const brand = (card.dataset.brand || '').toLowerCase();
-          const price = parseFloat(card.dataset.price || '0');
-          const storage = (card.dataset.storage || '').toString(); // ex: "128"
-
-          // 🔍 texte
-          const matchText = name.includes(term);
-
-          // 🏷️ marque
-          const matchBrand = (currentBrandFilter === 'all' || brand === currentBrandFilter);
-
-          // 💰 prix
-          let matchPrice = true;
-          if (priceFilter === 'lt300') {
-            matchPrice = price < 300;
-          } else if (priceFilter === '300-600') {
-            matchPrice = (price >= 300 && price <= 600);
-          } else if (priceFilter === 'gt600') {
-            matchPrice = price > 600;
-          }
-
-          // 💾 stockage
-          let matchStorage = true;
-          if (storageFilter !== 'all') {
-            matchStorage = (storage === storageFilter);
-          }
-
-          // Affichage final
-          const col = card.closest('.col-auto');
-          if (matchText && matchBrand && matchPrice && matchStorage) {
-            col.style.display = '';
-          } else {
-            col.style.display = 'none';
-          }
-        });
-      }
-
-      // 🔍 recherche texte
-      if (searchInput) {
-        searchInput.addEventListener('input', applyFilters);
-      }
-
-      // 🎯 filtre marque
-      filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          filterButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          currentBrandFilter = btn.dataset.filter;
-          applyFilters();
-        });
-      });
-
-      // 💰 filtre prix
-      if (priceSelect) {
-        priceSelect.addEventListener('change', applyFilters);
-      }
-
-      // 💾 filtre stockage
-      if (storageSelect) {
-        storageSelect.addEventListener('change', applyFilters);
-      }
-    });
-
-
-
-//filter ordinateur portable
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const searchInput = document.getElementById('searchLaptop');
-      const brandButtons = document.querySelectorAll('#laptopFilters button');
-      const priceSelect = document.getElementById('laptopPriceFilter');
-      const storageSelect = document.getElementById('laptopStorageFilter');
-      const cards = document.querySelectorAll('.product-card');
-
-      let currentBrandFilter = 'all';
-
-      function applyFilters() {
-        const term = searchInput ? searchInput.value.trim().toLowerCase() : '';
-        const priceFilter = priceSelect ? priceSelect.value : 'all';
-        const storageFilter = storageSelect ? storageSelect.value : 'all';
-
-        cards.forEach(card => {
-          const name = (card.dataset.name || card.querySelector('.card-title').textContent).toLowerCase();
-          const brand = (card.dataset.brand || '').toLowerCase();
-          const price = parseFloat(card.dataset.price || '0');
-          const storage = (card.dataset.storage || '').toString();
-
-          // 🔍 texte recherche
-          const matchText = name.includes(term);
-
-          // 🏷️ marque
-          let matchBrand = true;
-          if (currentBrandFilter !== 'all') {
-            if (currentBrandFilter === 'autres') {
-              matchBrand = !['asus', 'dell', 'hp', 'apple'].includes(brand);
-            } else {
-              matchBrand = (brand === currentBrandFilter);
-            }
-          }
-
-          // 💰 prix
-          let matchPrice = true;
-          if (priceFilter === 'lt500') {
-            matchPrice = price < 500;
-          } else if (priceFilter === '500-800') {
-            matchPrice = price >= 500 && price <= 800;
-          } else if (priceFilter === 'gt800') {
-            matchPrice = price > 800;
-          }
-
-          // 💾 stockage
-          let matchStorage = true;
-          if (storageFilter !== 'all') {
-            matchStorage = (storage === storageFilter);
-          }
-
-          const col = card.closest('.col-auto');
-          if (matchText && matchBrand && matchPrice && matchStorage) {
-            col.style.display = '';
-          } else {
-            col.style.display = 'none';
-          }
-        });
-      }
-
-      // 🔍 recherche texte
-      if (searchInput) {
-        searchInput.addEventListener('input', applyFilters);
-      }
-
-      // 🎯 filtre marque
-      brandButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          brandButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          currentBrandFilter = btn.dataset.filter;
-          applyFilters();
-        });
-      });
-
-      // 💰 filtre prix
-      if (priceSelect) {
-        priceSelect.addEventListener('change', applyFilters);
-      }
-
-      // 💾 filtre stockage
-      if (storageSelect) {
-        storageSelect.addEventListener('change', applyFilters);
-      }
-    });
-
-
-    // filter components 
-      document.addEventListener('DOMContentLoaded', function () {
-      const searchInput = document.getElementById('searchComponents');
-      const categoryButtons = document.querySelectorAll('#componentsFilters button');
-      const priceSelect = document.getElementById('componentsPriceFilter');
-      const cards = document.querySelectorAll('.product-card');
-
-      let currentCategoryFilter = 'all';
-
-      function applyFilters() {
-        const term = searchInput ? searchInput.value.trim().toLowerCase() : '';
-        const priceFilter = priceSelect ? priceSelect.value : 'all';
-
-        cards.forEach(card => {
-          const name = (card.dataset.name || card.querySelector('.card-title').textContent).toLowerCase();
-          const category = (card.dataset.category || '').toLowerCase();
-          const price = parseFloat(card.dataset.price || '0');
-
-          // 🔍 texte (nom)
-          const matchText = name.includes(term);
-
-          // 🧩 type composant
-          let matchCategory = true;
-          if (currentCategoryFilter !== 'all') {
-            matchCategory = (category === currentCategoryFilter);
-          }
-
-          // 💰 prix
-          let matchPrice = true;
-          if (priceFilter === 'lt50') {
-            matchPrice = price < 50;
-          } else if (priceFilter === '50-150') {
-            matchPrice = price >= 50 && price <= 150;
-          } else if (priceFilter === 'gt150') {
-            matchPrice = price > 150;
-          }
-
-          const col = card.closest('.col-auto');
-          if (matchText && matchCategory && matchPrice) {
-            col.style.display = '';
-          } else {
-            col.style.display = 'none';
-          }
-        });
-      }
-
-      // 🔍 recherche
-      if (searchInput) {
-        searchInput.addEventListener('input', applyFilters);
-      }
-
-      // 🧩 filtre type
-      categoryButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          categoryButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          currentCategoryFilter = btn.dataset.filter;
-          applyFilters();
-        });
-      });
-
-      // 💰 filtre prix
-      if (priceSelect) {
-        priceSelect.addEventListener('change', applyFilters);
-      }
-    });
-
-
-
-    // filter accessoires
-      document.addEventListener('DOMContentLoaded', function () {
-      const searchInput = document.getElementById('searchAccessories');
-      const categoryButtons = document.querySelectorAll('#accessoriesFilters button');
-      const priceSelect = document.getElementById('accessoriesPriceFilter');
-      const cards = document.querySelectorAll('.product-card');
-
-      let currentCategoryFilter = 'all';
-
-      function applyFilters() {
-        const term = searchInput ? searchInput.value.trim().toLowerCase() : '';
-        const priceFilter = priceSelect ? priceSelect.value : 'all';
-
-        cards.forEach(card => {
-          const name = (card.dataset.name || card.querySelector('.card-title').textContent).toLowerCase();
-          const category = (card.dataset.category || '').toLowerCase();
-          const price = parseFloat(card.dataset.price || '0');
-
-          // 🔍 texte
-          const matchText = name.includes(term);
-
-          // 🎯 type accessoire
-          let matchCategory = true;
-          if (currentCategoryFilter !== 'all') {
-            matchCategory = (category === currentCategoryFilter);
-          }
-
-          // 💰 prix
-          let matchPrice = true;
-          if (priceFilter === 'lt30') {
-            matchPrice = price < 30;
-          } else if (priceFilter === '30-70') {
-            matchPrice = price >= 30 && price <= 70;
-          } else if (priceFilter === 'gt70') {
-            matchPrice = price > 70;
-          }
-
-          const col = card.closest('.col-auto');
-          if (matchText && matchCategory && matchPrice) {
-            col.style.display = '';
-          } else {
-            col.style.display = 'none';
-          }
-        });
-      }
-
-      // 🔍 recherche
-      if (searchInput) {
-        searchInput.addEventListener('input', applyFilters);
-      }
-
-      // 🎯 filtre type
-      categoryButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          categoryButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          currentCategoryFilter = btn.dataset.filter;
-          applyFilters();
-        });
-      });
-
-      // 💰 filtre prix
-      if (priceSelect) {
-        priceSelect.addEventListener('change', applyFilters);
-      }
-    });
-
-//filter boutique complete
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const searchInput = document.getElementById('boutiqueSearchInput');
-      const categoryFilter = document.getElementById('categoryFilter');
-      const priceFilter = document.getElementById('priceFilter');
-      const productCards = document.querySelectorAll('.product-card');
-
-      function matchesPrice(price, rule) {
-        if (!rule || rule === 'all') return true;
-        const p = parseFloat(price);
-        if (isNaN(p)) return true;
-
-        if (rule === 'lt200') return p < 200;
-        if (rule === '200-500') return p >= 200 && p <= 500;
-        if (rule === 'gt500') return p > 500;
-        return true;
-      }
-
-      function filterProducts() {
-        const searchTerm = searchInput.value.trim().toLowerCase();
-        const selectedCategory = categoryFilter.value;
-        const selectedPriceRule = priceFilter.value;
-
-        productCards.forEach(card => {
-          const name = (card.dataset.name || '').toLowerCase();
-          const category = (card.dataset.category || '').toLowerCase();
-          const price = card.dataset.price || '';
-
-          const col = card.closest('.col-auto') || card;
-
-          const nameMatch = !searchTerm || name.includes(searchTerm);
-          const categoryMatch = selectedCategory === 'all' || category === selectedCategory;
-          const priceMatch = matchesPrice(price, selectedPriceRule);
-
-          if (nameMatch && categoryMatch && priceMatch) {
-            col.classList.remove('d-none');
-          } else {
-            col.classList.add('d-none');
-          }
-        });
-      }
-
-      searchInput.addEventListener('input', filterProducts);
-      categoryFilter.addEventListener('change', filterProducts);
-      priceFilter.addEventListener('change', filterProducts);
-    });
+ 
+
+//filter ordinateur portable--samrtphone--accessoires--composants pc
+
+  
+
+// les elements du filtre
+const ordiSearch    = document.getElementById("ordiSearch");
+const ordiMinPrice  = document.getElementById("ordiMinPrice");
+const ordiMaxPrice  = document.getElementById("ordiMaxPrice");
+const ordiResetBtn  = document.getElementById("ordiReset");
+
+// toutes les cartes
+const ordiCards = document.querySelectorAll(".product-card");
+
+//function to apply filters
+function applyOrdiFilters() {
+  const search = (ordiSearch?.value || "").toLowerCase().trim();
+  const min = parseFloat(ordiMinPrice?.value) || 0;
+  const max = parseFloat(ordiMaxPrice?.value) || Infinity;
+
+  ordiCards.forEach(card => {
+    const name  = (card.dataset.name || "").toLowerCase();
+    const price = parseFloat(card.dataset.price) || 0;
+
+    let visible = true;
+
+    // filitre des noms
+    if (search && !name.includes(search)) {
+      visible = false;
+    }
+
+    // filtre des prix
+    if (price < min || price > max) {
+      visible = false;
+    }
+
+    // cacher ou afficher la carte
+    const col = card.closest(".col-auto");
+    if (col) {
+      col.style.display = visible ? "" : "none";
+    }
+  });
+}
+
+// event listeners pour les filtres
+if (ordiSearch)   ordiSearch.addEventListener("input", applyOrdiFilters);
+if (ordiMinPrice) ordiMinPrice.addEventListener("input", applyOrdiFilters);
+if (ordiMaxPrice) ordiMaxPrice.addEventListener("input", applyOrdiFilters);
+
+// event listener pour Reset
+if (ordiResetBtn) {
+  ordiResetBtn.addEventListener("click", () => {
+    if (ordiSearch)   ordiSearch.value = "";
+    if (ordiMinPrice) ordiMinPrice.value = "";
+    if (ordiMaxPrice) ordiMaxPrice.value = "";
+    applyOrdiFilters();
+  });
+}
+
+// appliquer les filtres au chargement
+applyOrdiFilters();
+
+
+//     
+ // js/boutique.js
+
+//  les elements du filtre
+const searchInput   = document.getElementById('searchInput');
+const headerSearch  = document.getElementById('headerSearch'); // بحث الهيدر
+const categorieFilter = document.getElementById('categorieFilter');
+const minPriceInput = document.getElementById('minPrice');
+const maxPriceInput = document.getElementById('maxPrice');
+const resetBtn      = document.getElementById('resetFilters');
+
+// toutes les cartes
+const cards = document.querySelectorAll('.product-card');
+
+// function to apply filters
+function applyFilters() {
+  const text = (searchInput?.value || '').trim().toLowerCase();
+  const headerText = (headerSearch?.value || '').trim().toLowerCase();
+  const globalText = (text || headerText); // لو واحد منهم فيه نص نستعمله
+
+  const selectedCat = categorieFilter?.value || '';
+  const minPrice = parseFloat(minPriceInput?.value) || 0;
+  const maxPrice = parseFloat(maxPriceInput?.value) || Infinity;
+
+  cards.forEach(card => {
+    const name = (card.dataset.name || '').toLowerCase();
+    const categorie = card.dataset.categorie || '';
+    const price = parseFloat(card.dataset.price) || 0;
+
+    let visible = true;
+
+    // recherche par nom
+    if (globalText && !name.includes(globalText)) {
+      visible = false;
+    }
+
+    // recherche par categorie
+    if (selectedCat && categorie !== selectedCat) {
+      visible = false;
+    }
+
+    // recherche par prix
+    if (price < minPrice || price > maxPrice) {
+      visible = false;
+    }
+
+    // cacher ou afficher la carte
+    const col = card.closest('.col-auto');
+    if (col) {
+      col.style.display = visible ? '' : 'none';
+    }
+  });
+}
+
+// event listeners pour les filtres
+if (searchInput)   searchInput.addEventListener('input', applyFilters);
+if (headerSearch)  headerSearch.addEventListener('input', applyFilters);
+if (categorieFilter) categorieFilter.addEventListener('change', applyFilters);
+if (minPriceInput) minPriceInput.addEventListener('input', applyFilters);
+if (maxPriceInput) maxPriceInput.addEventListener('input', applyFilters);
+
+if (resetBtn) {
+  resetBtn.addEventListener('click', () => {
+    if (searchInput)   searchInput.value = '';
+    if (headerSearch)  headerSearch.value = '';
+    if (categorieFilter) categorieFilter.value = '';
+    if (minPriceInput) minPriceInput.value = '';
+    if (maxPriceInput) maxPriceInput.value = '';
+    applyFilters();
+  });
+}
+
+// appliquer les filtres au chargement¦
+applyFilters();

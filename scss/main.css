@@ -13052,4 +13052,18 @@ textarea.form-control-lg {
 
 .dark-mode .para_presentation {
   color: #FFFFFF;
+}
+
+.user-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
